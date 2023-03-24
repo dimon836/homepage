@@ -1,0 +1,15 @@
+{
+    "short_name": "DH",
+    "name": "Dima Halych",
+    "icons": [
+      {
+        "src": "/assets/images/hat_icon.webp",
+        "type": "image/png",
+        "sizes": "192x192"
+      }
+    ],
+    "start_url": "/index.html",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "white"
+  }
