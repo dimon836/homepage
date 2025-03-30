@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Résumé</title>
+    <title>Резюме</title>
     <meta name="theme-color" content="#4285f4">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://binary-studio-academy.github.io/stage-2/assets/stylesheets/base.css">
     <link rel="stylesheet" href="assets/styles/add_style.css">
     <link rel="icon" sizes="256x256" href="/assets/images/letter_y.webp">
@@ -32,7 +33,7 @@
                         <div class="stackable grid">
                             <div class="sixteen wide column">
                                 <h1 class="name">Галич Дмитро</h1>
-                                <div class="job">Ruby on Rails Developer</div>
+                                <div class="job">Ruby on Rails Розробник</div>
                                 <h3><b> Контактна інформація</b></h3>
                                 <ul class="contacts">
                                     <li style="display: flex;">
@@ -47,15 +48,9 @@
                                     </li>
                                     <li style="display: flex;">
                                         <a href="https://t.me/Dimon836" rel="author" class="telegram">
-                                            <a class="icon telegram"
-                                               title="Telegram Messenger LLP, Public domain, via Wikimedia Commons"
-                                               href="https://t.me/Dimon836">
-                                                <img width="15" alt="Telegram logo"
-                                                     src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Telegram_X_2019_Logo.svg">
-                                            </a>
-                                            <a class="name-span telegram" href="https://t.me/Dimon836">
-                                                <span style="cursor: pointer; caret-color: transparent;">Dimon836</span>
-                                            </a>
+                                            <img width="15" alt="Telegram logo"
+                                                 src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Telegram_X_2019_Logo.svg">
+                                            <span style="margin-left: 5px;">Dimon836</span>
                                         </a>
                                     </li>
                                     <li style="display: flex;">
@@ -87,110 +82,159 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="ten wide column">
-                        <h3>Освіта</h3>
-                        <ul class="timeline">
-                            <li>
-                                <a href="https://kpi.ua/"><small><b>Університет</b></small></a>
-                                <p>Ступінь бакалавра програмної інженерії</p>
-                                <p>Національний Технічний Університет України Київський Політехнічний Інститут”</p>
-
-                                <p><small><b>Закінчені курси:</b></small></p>
-                                Вступ до алгоритмів, Вступ до програмування в інформатиці,
-                                Дискретна математика, Лінійна алгебра та аналітична геометрія,
-                                Імовірність і статистика, Теорія алгоритмів, Бази даних, Розробка Spring Backend,
-                                Загальна WEB розробка, Машинне навчання та інші
-                                <p style="margin-left: 60%;"><small>2018 - 2022</small></p>
+                    <div class="ten wide column border-right">
+                        <h3 class="mb-4">Досвід</h3>
+                        <ul class="list-unstyled timeline">
+                            <li class="border-bottom pb-3 mb-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="https://zruchnotut.com/" class="text-decoration-none">
+                                        <h4 class="fw-bold">ЗручноТуТ</h4>
+                                    </a>
+                                    <small class="text-muted">Березень 2024 - Дотепер</small>
+                                </div>
+                                <p class="fw-semibold">Ruby on Rails Розробник (більше року)</p>
+                                <p>Досвід роботи в середовищі комерційної розробки</p>
+                                <p><strong>Технології та обов'язки:</strong></p>
+                                <ul>
+                                    <li>RSpec, Sidekiq, Redis, Docker, StimulusJS, rake-завдання та фонові завдання(jobs)</li>
+                                    <li>Керував розгортанням і налаштовував сервер</li>
+                                    <li>Працював із віддаленим репозиторієм через SSH (root-доступ), керував безпекою сервера</li>
+                                    <li>Оптимізував завдання та забезпечував стабільну роботу системи, налаштовуючи Sidekiq та індексацію бази даних</li>
+                                    <li>Налаштував CI/CD-пайплайни за допомогою GitHub Actions</li>
+                                    <li>Реалізував WebSockets за допомогою ActionCable для функцій у реальному часі</li>
+                                </ul>
                             </li>
-                            <li>
-                                <a href="https://kpi.ua/"><small><b>Університет</b></small></a>
-                                <p>Ступінь магістра програмної інженерії</p>
-                                <p>Національний Технічний Університет України Київський Політехнічний Інститут”</p>
-
-                                <p><small><b>Закінчені курси:</b></small></p>
-                                Хмарні та мережеві технології даних, Big Data Tools, IoT, управління інноваціями та
-                                інтелектуальна власність
-                                <p style="margin-left: 60%;"><small>2022 - 2024</small></p>
+                            <li class="border-bottom pb-3 mb-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="https://www.launchandscale.net/" class="text-decoration-none">
+                                        <h4 class="fw-bold">Launch&Scale</h4>
+                                    </a>
+                                    <small class="text-muted">Вересень 2022 - Лютий 2024</small>
+                                </div>
+                                <p class="fw-semibold">Junior Ruby on Rails Розробник (1.5 року)</p>
+                                <p>Досвід роботи в середовищі комерційної розробки</p>
+                                <p><strong>Технології та обов'язки:</strong></p>
+                                <ul>
+                                    <li>Використовував Git для контролю версій та співпрацював через GitHub</li>
+                                    <li>Розробляв і підтримував RESTful API</li>
+                                    <li>Реалізував автентифікацію та авторизацію за допомогою Devise</li>
+                                    <li>Налаштовував і оптимізував Sidekiq для обробки фонових завдань</li>
+                                    <li>Підтримував I18n та писав тести на RSpec</li>
+                                    <li>Працював із PostgreSQL, оптимізував запити до бази даних для підвищення продуктивності</li>
+                                    <li>Розробляв багаторазові компоненти StimulusJS для фронтенду</li>
+                                    <li>Реалізував та оптимізував кешування за допомогою Redis</li>
+                                    <li>Розгортав і моніторив застосунок на Render</li>
+                                    <li>Виконував налагодження, виправлення багів та рефакторинг коду для покращення продуктивності</li>
+                                    <li>Брав участь у гнучкій розробці, щоденних стендапах і код-рев’ю</li>
+                                </ul>
+                            </li>
+                            <li class="border-bottom pb-3 mb-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="https://www.launchandscale.net/" class="text-decoration-none">
+                                        <h4 class="fw-bold">Launch&Scale</h4>
+                                    </a>
+                                    <small class="text-muted">Червень 2022 - Серпень 2022</small>
+                                </div>
+                                <p class="fw-semibold">Ruby on Rails Розробник Інтернатура (3 місяці)</p>
+                                <p>Досвід роботи в середовищі комерційної розробки</p>
+                                <p><strong>Технології та обов'язки:</strong></p>
+                                <ul>
+                                    <li>Використовував Git для контролю версій</li>
+                                    <li>Розробляв проєкт і покращував якість коду</li>
+                                    <li>Реалізував інтернаціоналізацію та тести</li>
+                                    <li>Працював над веб-частиною застосунку</li>
+                                    <li>Розгорнув проєкт на Render.com</li>
+                                </ul>
+                            </li>
+                            <li class="border-bottom pb-3 mb-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <h4 class="fw-bold">Особисті проєкти</h4>
+                                    <small class="text-muted">Вересень 2018 - Дотепер</small>
+                                </div>
+                                <p><strong>Посилання на найновіші проєкти знаходяться у вкладці "Проєкти"</strong></p>
+                                <p>Деякі з моїх особистих і командних проєктів включають:</p>
+                                <ul>
+                                    <li>Full-stack веб-застосунки</li>
+                                    <li>Односторінкові застосунки (SPAs)</li>
+                                    <li>Проєкти з машинного навчання</li>
+                                    <li>Низькорівневі структури даних</li>
+                                    <li>Інші проєкти з розробки програмного забезпечення</li>
+                                </ul>
                             </li>
                         </ul>
-                        <h3>Досвід</h3>
-                        <ul class="timeline">
-                            <li>
-                                <a href="https://zruchnotut.com/"><small><b>ЗручноТуТ</b></small></a>
-                                <p>RoR розробник</p>
-                                <p>Досвід роботи в середовищі комерційної розробки</P>
-                                <p><small><b> Досвід:</b></small></p>
-                                На цій позиції, я працював з Devise gem, CRM model, рефакторив код, та впроваджував Rubocop
-                                до проекту, виправляв баги, працював з jQuery, та впроваджував rspecs.
-                                Під час роботи, я використовував git та github для контролю версій.
-                                <p style="margin-left: 60%;"><small>Березень 2024 - дотепер</small></p>
+                        <h3 class="mb-4">Освіта</h3>
+                        <ul class="list-unstyled timeline">
+                            <li class="border-bottom pb-3 mb-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="https://kpi.ua/" class="text-decoration-none">
+                                        <h4 class="fw-bold">Університет</h4>
+                                    </a>
+                                    <small class="text-muted">2018 - 2022</small>
+                                </div>
+                                <p class="fw-semibold">Ступінь бакалавра в програмній інженерії</p>
+                                <p>Національний технічний університет України КПІ ім. Ігоря Сікорського</p>
+                                <p><strong>📚 Пройдені курси:</strong></p>
+                                <ul>
+                                    <li>Вступ до алгоритмів</li>
+                                    <li>Вступ до програмування в комп'ютерних науках</li>
+                                    <li>Дискретна математика</li>
+                                    <li>Лінійна алгебра та аналітична геометрія</li>
+                                    <li>Ймовірність і статистика</li>
+                                    <li>Теорія алгоритмів</li>
+                                    <li>Бази даних</li>
+                                    <li>Spring Backend розробка</li>
+                                    <li>Загальна веб-розробка</li>
+                                    <li>Машинне навчання</li>
+                                    <li>Та інші</li>
+                                </ul>
                             </li>
-                            <li>
-                                <a href="https://www.launchandscale.net/"><small><b>Launch&Scale</b></small></a>
-                                <p>6 місяців як Junior RoR розробник</p>
-                                <p>Досвід роботи в середовищі комерційної розробки</p>
-                                <p><small><b> Досвід:</b></small></p>
-                                Під час роботи, я використовував систему контролю версій - git, підтримував
-                                інтернаціоналізацію та тести, розробив авторизацію та автентифікацію використовуючи
-                                Devise gem, знаходив та виправляв деякі баги.
-                                <p style="margin-left: 60%;"><small>Вересень 2023 - Лютий 2024</small></p>
-                            </li>
-                            <li>
-                                <a href="https://www.launchandscale.net/"><small><b>Launch&Scale</b></small></a>
-                                <p>3 місяці стажування RoR розробником</p>
-                                <p>Досвід роботи в середовищі комерційної розробки</p>
-                                <p><small><b> Досвід:</b></small></p>
-                                Під час роботи я використовував систему контролю версій - git,
-                                розробляв проект, впровадив інтернаціоналізацію та тести, покращував якість коду,
-                                працював з веб-частиною програми, розробив авторизацію та автентифікацію використовуючи
-                                Devise gem, знаходив та виправляв деякі баги
-                                <p style="margin-left: 60%;"><small>Червень 2023 - Січень 2024</small></p>
-                            </li>
-                            <li>
-                                <a><small><b>Особисті проекти</b></small></a>
-                                <p><small><b>Посилання на останні проекти знаходяться на вкладці Проекти</b></small></p>
-                                Деякі з моїх особистих проектів і ті, в розробці яких я брав участь:
-                                Full-stack WEB застосування, SPAs, машине навчання, низькорівневі структури даних та
-                                інші
-                                <p style="margin-left: 60%;"><small>Вересень 2018 - дотепер</small></p>
+                            <li class="border-bottom pb-3 mb-4">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <a href="https://kpi.ua/" class="text-decoration-none">
+                                        <h4 class="fw-bold">Університет</h4>
+                                    </a>
+                                    <small class="text-muted">2022 - 2024</small>
+                                </div>
+                                <p class="fw-semibold">Ступінь магістра в програмній інженерії</p>
+                                <p>Національний технічний університет України КПІ ім. Ігоря Сікорського</p>
+                                <p><strong>📚 Пройдені курси:</strong></p>
+                                <ul>
+                                    <li>Хмарні та Data Grid технології</li>
+                                    <li>Інструменти роботи з Big Data</li>
+                                    <li>Інтернет речей (IoT)</li>
+                                    <li>Управління інноваціями</li>
+                                    <li>Інтелектуальна власність</li>
+                                </ul>
                             </li>
                         </ul>
+
                     </div>
-                    <div class="six wide column">
-                        <section>
-                            <h3>Мови</h3>
-                            <p class="tags small">
-                            <div class="language" lang="en"> &#8226; Англійська (Середній B1)</div>
-                            <div class="language" lang="ua"> &#8226; Українська (Вільно)</div>
-                        </section>
+                    <div class="six wide column border-left">
                         <section>
                             <h3>Технічні навички</h3>
-                            <p class="tags small bulleted">
-                                <span class="tag"></span>
-                                <span class="tag">Ruby 3.x</span>
-                                <span class="tag">Rails 7.x</span>
-                                <span class="tag">Hotwire</span>
-                                <span class="tag">Stimulusjs</span>
-                                <span class="tag">PostgreSQL | MySQL | SQLite</span>
-                                <span class="tag">RSpec</span>
-                                <span class="tag">I18n</span>
-                                <span class="tag">Devise</span>
-                                <span class="tag">HTML 5/CSS 3</span>
-                                <span class="tag">GIT</span>
-                                <span class="tag">GitHub | GitLab</span>
-                                <span class="tag">github actions</span>
-                                <span class="tag">Bootstrap 5</span>
-                                <span class="tag">HTTP/HTTPS</span>
-                                <span class="tag">REST</span>
-                                <span class="tag">Linux | Ubuntu</span>
-                                <span class="tag">Docker</span>
-                                <span class="tag">Heroku | Render</span>
-                                <span class="tag">Concurrency</span>
-                                <span class="tag">Algorithms | Data Structures</span>
-                                <span class="tag">Eurystic algorithms</span>
-                                <span class="tag">Trello | Jira</span>
-                                <span class="tag"></span>
-                            </p>
+                            <ul>
+                                <li>Ruby 3.x</li>
+                                <li>Rails 6.x | 7.x</li>
+                                <li>Turbo | Hotwire</li>
+                                <li>Stimulusjs</li>
+                                <li>PostgreSQL | MySQL | SQLite</li>
+                                <li>REST | GraphQL</li>
+                                <li>RSpec</li>
+                                <li>I18n</li>
+                                <li>Devise</li>
+                                <li>Redis | Sidekiq</li>
+                                <li>HTML 5/CSS 3</li>
+                                <li>GIT</li>
+                                <li>GitHub | GitLab</li>
+                                <li>GitHub actions</li>
+                                <li>Bootstrap 5</li>
+                                <li>HTTP/HTTPS</li>
+                                <li>Linux | Ubuntu</li>
+                                <li>Docker</li>
+                                <li>Heroku | Render</li>
+                                <li>Concurrency | Algorithms | Data Structures</li>
+                                <li>Trello | Jira | YouTrack</li>
+                            </ul>
                         </section>
                         <section>
                             <h3>Нетехнічні вміння</h3>
@@ -218,33 +262,41 @@
                             </p>
                         </section>
                         <section>
-                            <h3>Проекти</h3>
-                            <p class="tags small">
-                            <div class="language">
-                                <a href="https://github.com/dimon836/blog">Блог</a>
+                            <h3>Проєкти</h3>
+                            <table class="table">
+                                <thead>
+                                <tr>
+                                    <th>Проєкт</th>
+                                    <th>Опис</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>CRM додаток для CTO</td>
+                                    <td>Працюю над розробкою GraphQL API та оптимізую запити для стартап-проєкту.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://github.com/dimon836/blog/tree/develop">Блог</a></td>
+                                    <td>Розробив full-stack блог-застосунок, використовуючи Rails і PostgreSQL. Реалізував автентифікацію та фонові завдання за допомогою Sidekiq.</td>
+                                </tr>
+                                <tr>
+                                    <td><a href="https://github.com/dimon836/homepage">Резюме</a></td>
+                                    <td>Створив персональний сайт-портфоліо, використовуючи HTML, CSS і Bootstrap.</td>
+                                </tr>
+                                <tr>
+                                    <td>Сімейний додаток</td>
+                                    <td>Спроєктував RESTful API на Java та розробив бекенд-логіку для функцій сімейного бюджету.</td>
+                                </tr>
+                                </tbody>
+                            </table>
 
-                            </div>
-                            <div class="language">
-                                <a href="https://github.com/dimon836/homepage">Резюме</a>
-                            </div>
-                            <div class="language">
-                                Додаток для сім'ї (Розгорнуто на Heroku)
-                            </div>
-                            <!--                            <p></p>-->
-                            <div class="mt-3 language">
-                                Кілька великих проектів з університету:
-                                <div class="secondary">
-                                    <a href="https://github.com/dimon836/UniversityLabs/tree/main/DM">
-                                        Транслятор(мова програмування DM)
-                                    </a>
-                                </div>
-                                <div class="secondary">
-                                    <p title="Ідентифікація параметрів гідроакустичних полів на основі порівняння результатів моделювання і натурного експерименту."
-                                       style="cursor:help">
-                                        Магістерський проект
-                                    </p>
-                                </div>
-                            </div>
+                        </section>
+                        <section>
+                            <h3>Languages</h3>
+                            <p class="tags small">
+                            <div class="language" lang="en"> &#8226; ENGLISH (Intermediate B1)</div>
+                            <div class="language" lang="ua"> &#8226; UKRAINIAN (Native)</div>
+                            </p>
                         </section>
                     </div>
                 </div>

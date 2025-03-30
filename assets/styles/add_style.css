@@ -80,3 +80,11 @@ a.project{
 #language-choice-bar>:last-child{
   border-right: black 0px solid;
 }
+
+.ten.wide.column.border-right {
+    border-right: 1px solid #ccc !important;
+}
+
+.ten.wide.column.border-left {
+    border-left: 1px solid #ccc !important;
+}
